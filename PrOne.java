@@ -17,4 +17,22 @@ public class PrOne {
         }
         System.out.println(sum);
     }
+
+    public void createSum2() {
+        sum = 0;
+        top =1000;
+        int byThree = 0;
+        int byFive = 0;
+        while ( byThree < top){
+            if (!(byThree % 5 == 0)){
+                sum = sum + byThree;
+            }
+            byThree = byThree+3;
+        }
+        while ( byFive < top){
+            sum = sum + byFive;
+            byFive = byFive + 5;
+        }
+        System.out.println(sum);
+    }
 }
